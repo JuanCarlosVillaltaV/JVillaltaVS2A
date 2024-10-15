@@ -13,7 +13,7 @@
     FontSize="24"
     TextColor="Blue"/>
         <Label 
-Text="SISTEMA DE NOTAS"
+Text="SISTEMA DE CALIFICACIONES"
 VerticalOptions="Center" 
 HorizontalOptions="Center"
 FontSize="24"
@@ -35,15 +35,20 @@ TextColor="skyblue"/>
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="Seguimiento" />
+        <Label Text="Nota PARCIAL1" FontSize="20"/>
+        
+        <Label Text="Seguimiento" />
             <Entry x:Name="txtSeguimiento1" 
                    Keyboard="Numeric" />
-
+        
+   
             <Label Text="Examen1" />
             <Entry x:Name="txtexamen1"
                    Keyboard="Numeric" />
 
-            <Label Text="Seguimiento2" />
+        <Label Text="Nota PARCIAL2" 
+               FontSize="20"/>
+        <Label Text="Seguimiento2" />
         <Entry x:Name="txtSeguimiento2" 
                      Keyboard="Numeric" />
 

@@ -31,12 +31,12 @@ public partial class Home : ContentPage
 
                 // Determinar 
                 string estado = GetEstado(notaFinal);
-                string fecha = dFechas.Date.ToString("d"); // Formato de fecha
+                string fecha = dFechas.Date.ToString("d"); // Formatos de fecha
               
 
                 
 
-                // Mostrar los resultados en un DisplayAlert
+                // Presenta los resultados en un DisplayAlert
                 string message = $"Su nota 1: {nota1}\n" +
                                  $"Su examen 1: {examenes1}\n" +
                                  $"Su nota 2: {nota2}\n" +
