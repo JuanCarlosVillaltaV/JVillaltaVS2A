@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JVillaltaVS2A.Views.Home"
+             Title="Home">
+    <VerticalStackLayout Padding="20">
+
+
+        <Label 
+    Text="UNIVERSIDAD TECNÓLOGICA ISRAEL"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center"
+    FontSize="24"
+    TextColor="Blue"/>
+        <Label 
+Text="SISTEMA DE NOTAS"
+VerticalOptions="Center" 
+HorizontalOptions="Center"
+FontSize="24"
+TextColor="skyblue"/>
+
+
+        <Label
+            
+            Text="Selecciona un Estudiante:" FontSize="20"/>
+            <Picker x:Name="estudiantePicker" Title="Compañeros">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Joffre</x:String>
+                        <x:String>Jhon</x:String>
+                        <x:String>Jorge</x:String>
+                        <x:String>Alex</x:String>
+                        <x:String>Josue</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Seguimiento" />
+            <Entry x:Name="notaSeguimiento1" 
+                   Keyboard="Numeric" />
+
+            <Label Text="Examen1" />
+            <Entry x:Name="examen1"
+                   Keyboard="Numeric" />
+
+            <Label Text="Seguimiento2" />
+            <Entry x:Name="notaSeguimiento2" 
+                     Keyboard="Numeric" />
+
+            <Label Text="Examen2" />
+        
+            <Entry x:Name="examen2" 
+                   Keyboard="Numeric" />
+
+
+
+
+        <Label Text="Fecha" />
+        <DatePicker x:Name="dFechas" />
+
+
+
+
+
+        <Label x:Name="resultadoLabel" FontSize="20" />
+        <Button Text="Calcular Nota final"
+                Clicked="Nota_Clicked"/>
+       
+
+
+
+
+
+
+
+</VerticalStackLayout>
+</ContentPage>
