@@ -45,6 +45,7 @@ public partial class Home : ContentPage
                                  $"Estado: {estado}\n" +
                                  $"Fecha: {fecha}";
 
+
                 DisplayAlert("Alert", message, "Cerrar");
 
 
