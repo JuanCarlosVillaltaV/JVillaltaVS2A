@@ -36,20 +36,20 @@ TextColor="skyblue"/>
             </Picker>
 
             <Label Text="Seguimiento" />
-            <Entry x:Name="notaSeguimiento1" 
+            <Entry x:Name="txtSeguimiento1" 
                    Keyboard="Numeric" />
 
             <Label Text="Examen1" />
-            <Entry x:Name="examen1"
+            <Entry x:Name="txtexamen1"
                    Keyboard="Numeric" />
 
             <Label Text="Seguimiento2" />
-            <Entry x:Name="notaSeguimiento2" 
+        <Entry x:Name="txtSeguimiento2" 
                      Keyboard="Numeric" />
 
             <Label Text="Examen2" />
-        
-            <Entry x:Name="examen2" 
+
+        <Entry x:Name="txtexamen2" 
                    Keyboard="Numeric" />
 
 

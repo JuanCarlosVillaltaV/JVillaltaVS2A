@@ -10,10 +10,10 @@ public partial class Home : ContentPage
     private void Nota_Clicked(object sender, EventArgs e)
     {
         // Obtener las notas
-        if (double.TryParse(notaSeguimiento1.Text, out double nota1) &&
-            double.TryParse(examen1.Text, out double examenes1) &&
-            double.TryParse(notaSeguimiento2.Text, out double nota2) &&
-            double.TryParse(examen2.Text, out double examenes2))
+        if (double.TryParse(txtSeguimiento1.Text, out double nota1) &&
+            double.TryParse(txtexamen1.Text, out double examenes1) &&
+            double.TryParse(txtSeguimiento2.Text, out double nota2) &&
+            double.TryParse(txtexamen2.Text, out double examenes2))
           
 
 
