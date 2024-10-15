@@ -9,20 +9,13 @@ public partial class Home : ContentPage
 
     private void Nota_Clicked(object sender, EventArgs e)
     {
-        // Obtener las notas
+        // Validación de las notas 
         if (double.TryParse(txtSeguimiento1.Text, out double nota1) &&
             double.TryParse(txtexamen1.Text, out double examenes1) &&
             double.TryParse(txtSeguimiento2.Text, out double nota2) &&
-            double.TryParse(txtexamen2.Text, out double examenes2))
-          
-
-
-
+            double.TryParse(txtexamen2.Text, out double examenes2))  
         {
-            
-
-
-            // Validar rangos
+            // Validaciones
             if 
                 (IsValid(nota1) && 
                 IsValid(examenes1) && 
@@ -31,10 +24,10 @@ public partial class Home : ContentPage
                
 
             {
-                // Calcular notas parciales
-                double parcial1 = (nota1 * 0.3) + (examenes1 * 0.2);
-                double parcial2 = (nota2 * 0.3) + (examenes2 * 0.2);
-                double notaFinal = parcial1 + parcial2;
+                // Se cálcula notas parciales
+                double par1 = (nota1 * 0.3) + (examenes1 * 0.2);
+                double par2 = (nota2 * 0.3) + (examenes2 * 0.2);
+                double notaFinal = par1 + par2;
 
                 // Determinar 
                 string estado = GetEstado(notaFinal);
@@ -59,7 +52,7 @@ public partial class Home : ContentPage
 
 
 
-                // Mostrar resultado
+               //PresentationMode el resultado
                 resultadoLabel.Text = $"Nota Final: {notaFinal:F2} - Estado: {estado}";
             }
             else
@@ -69,7 +62,7 @@ public partial class Home : ContentPage
         }
         else
         {
-            DisplayAlert("Error", "Por favor, ingrese valores numéricos válidos.", "OK");
+            DisplayAlert("Error", "Por favor, ingrese valores que sean numéricos válidos.", "OK");
 
         }
         

@@ -7,7 +7,7 @@
 
 
         <Label 
-    Text="UNIVERSIDAD TECNÓLOGICA ISRAEL"
+    Text="UNIVERSIDAD ISRAEL"
     VerticalOptions="Center" 
     HorizontalOptions="Center"
     FontSize="24"
@@ -23,7 +23,7 @@ TextColor="skyblue"/>
         <Label
             
             Text="Selecciona un Estudiante:" FontSize="20"/>
-            <Picker x:Name="estudiantePicker" Title="Compañeros">
+            <Picker x:Name="estudiantePicker" Title="Estudiantes">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Joffre</x:String>
