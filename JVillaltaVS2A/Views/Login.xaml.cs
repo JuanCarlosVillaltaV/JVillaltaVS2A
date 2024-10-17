@@ -9,11 +9,14 @@ public partial class Login : ContentPage
 		InitializeComponent();
 	}
 
-    public Login(string usuario, string contrasena)
+    public Login(string usuario, 
+               string contrasena)
                 
         {
         user = usuario;
         password = contrasena;
+
+        InitializeComponent();
     }
 
 
