@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JVillaltaVS2A.Views.Login"
+             Title="Login">
+    <VerticalStackLayout 
+        Spacing="25"
+        Padding="25">
+        
+        <Label 
+            Text="Inicie sesión!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="https://revista.uisrael.edu.ec/images/uisrael.png" 
+               WidthRequest="250" />
+        <Entry
+            x:Name="txtUsuario"
+            Placeholder="Ingrese el usuario"/>
+
+        <Entry x:Name="txtContraseña"
+               Placeholder="Ingrese la contraseña"
+               IsPassword="True"/>
+        
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="btnIniciar"
+                    Text="Iniciar sesion"
+                    Clicked="btnIniciar_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+            <Button
+                x:Name="btnRegistro"
+                Text="Registrarse"
+                Clicked="btnRegistro_Clicked"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                
+                />
+
+
+        </Grid>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               
+            
+        
+        
+        
+    </VerticalStackLayout>
+</ContentPage>
