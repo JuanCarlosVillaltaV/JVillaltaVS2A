@@ -2,21 +2,29 @@ namespace JVillaltaVS2A.Views;
 
 public partial class Login : ContentPage
 {
-    string user,
-           password;
-	public Login()
-	{
-		InitializeComponent();
-	}
+    //Vector guarda la contraseña del arreglo 
+    private string[] user = {"Juan Carlos Villalta Villalta",
+                              "Carlos",
+                                "Ana",
+                               "Jose" };
 
-    public Login(string usuario, 
-               string contrasena)
-                
-        {
-        user = usuario;
-        password = contrasena;
+    private string[] password = {"12345zapotillo",
+                                "carlos123",
+                                 "ana123",
+                                "jose123" };
 
+    
+    public Login()
+    {
         InitializeComponent();
+    }
+
+    //Cosntructor inicia la views
+    public Login(string usuario,
+                 string contrasena)
+    {
+        InitializeComponent();
+
     }
 
 
@@ -26,25 +34,43 @@ public partial class Login : ContentPage
 
     private void btnIniciar_Clicked(object sender, EventArgs e)
     {
+        //Variables que inician sesión
         string usuario = txtUsuario.Text;
         string contrasena = txtContraseña.Text;
-        //Valido caja de texto
-        if (usuario==user && contrasena==password )
-            
 
+        //Lógica
+        //Busca el indice dentro del arreglo 
+        //Metodo Array
+
+        int index = Array.IndexOf(user,
+                                  usuario);
+
+        
+
+        //Lógica de Autenticación
+
+
+        if (index >= 0 && password[index] == contrasena)
         {
 
-           Navigation.PushAsync(new Views.Home());
+            // Mensaje
+            DisplayAlert("Bienvenido", $"Hola, {usuario}!", "Cerrar");
+            //Llama a la carpeta y Operaciones.xaml
+            Navigation.PushAsync(new Views.Home());
+
         }
+
+
         else
         {
-            DisplayAlert("ERROR", "Usuario/Contrasena Incorreatos", "Cerrar");
+            DisplayAlert("ERROR", "Usuario/Contraseña Incorrectos", "Cerrar");
         }
+
 
 
     }
 
-   
+
 
     private void btnRegistro_Clicked(object sender, EventArgs e)
     {
