@@ -6,7 +6,7 @@
     
     <VerticalStackLayout>
         <Label 
-            Text="REGISTRO DE USUARIOS"
+            Text="REGISTRO DE USUARIOSS"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
